@@ -2,9 +2,11 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ubuntu:rolling
+      - image: srcml/ubuntu_x86_64_base:latest
 
     steps:
       - checkout
-      - run: g++ hello.cpp -o hello
-      - run: ./hello
+      - run: ls
+      - run: pwd
+#      - run: g++ hello.cpp -o hello
+#      - run: ./hello
